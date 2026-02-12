@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tax Empire: Panic Season</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-glow"></div>
+    <header>
+      <h1>🎮 Tax Empire: Panic Season</h1>
+      <div class="chips">
+        <button data-mode="career" class="mode">Career</button>
+        <button data-mode="hardcore" class="mode">Hardcore</button>
+        <button data-mode="sandbox" class="mode">Sandbox</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hud" id="hud"></section>
+
+      <section class="office">
+        <button class="station" id="inboxStation">📥 Client Inbox</button>
+        <button class="station" id="prepStation">🧾 Prep Desk</button>
+        <button class="station" id="irsStation">🏛️ IRS Mail</button>
+        <button class="station" id="staffStation">👥 Staff Board</button>
+        <button class="station" id="upgradeStation">🏢 Office Upgrades</button>
+        <button class="station" id="coffeeStation">☕ Coffee Panic</button>
+      </section>
+
+      <section class="ticker-wrap">
+        <ul id="ticker"></ul>
+      </section>
+    </main>
+
+    <dialog id="panelDialog">
+      <div id="panelContent"></div>
+      <form method="dialog"><button class="close">Close</button></form>
+    </dialog>
+
+    <dialog id="auditDialog">
+      <h2>🧨 Audit Mini-Game</h2>
+      <p>Hit the correct document before time runs out.</p>
+      <div class="audit-top">
+        <strong id="auditTimer">12</strong>
+        <strong id="auditScore">0</strong>
+      </div>
+      <div id="auditGrid" class="audit-grid"></div>
+      <div class="audit-actions">
+        <button id="startAuditBtn">Start</button>
+        <button id="closeAuditBtn">Exit</button>
+      </div>
+    </dialog>
+
+    <script src="app.js"></script>
+  </body>
+</html>
