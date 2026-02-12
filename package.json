@@ -1,0 +1,17 @@
+{
+  "name": "taxpreparer-simulator",
+  "version": "1.0.0",
+  "description": "Web-based Tax Preparer Simulator game built with Node.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check public/app.js"
+  },
+  "keywords": [
+    "game",
+    "nodejs",
+    "simulation"
+  ],
+  "author": "",
+  "license": "MIT"
+}
